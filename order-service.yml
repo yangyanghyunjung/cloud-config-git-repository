@@ -1,17 +1,9 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/msa_step02_order?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-    username: root
-    password: 1234
-
-  jpa:
-    hibernate:
-      ddl-auto: create
-      dialect: org.hibernate.dialect.MySQL8Dialect
-    show-sql: true
 
 # RestTemplate이 참조하는 설정값
-# 서비스 디스커버리 설정(localhost:8081대신 payment-service라는 이름으로
+# 서비스 x`디스커버리 설정(localhost:8081대신 payment-service라는 이름으로
 # 결제 서비스를 탐색)
 # payment-service의 이름은 spring.application.name을 기반으로 함
 service:
@@ -21,7 +13,7 @@ service:
 server:
   port: 8080
 
-
+# cloud config 테스트용 설정값
 custom:
-  message: "초기 메세지-PROD 입니다."
+  message: "초기 메시지 - PROD 환경입니다"
   version: "1.0.0"

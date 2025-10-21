@@ -1,2 +1,1 @@
-# cloud-config-get-repository
-FISA-cloud-config-get-repository
+# cloud-config-git-repository
